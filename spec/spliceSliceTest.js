@@ -12,8 +12,15 @@ describe('Basic Test', () => {
         expect(result).to.have.members([6]);
     });
     it("given 5,20,25 expected 50", () => {
-        let array = [5,20,25];
+        let array = [5, 20, 25];
         let result = threeInOne(array);
         expect(result).to.have.members([50]);
     });
+    it("original array is not modified", () => {
+        let arrayAux = [];
+        let array = arrayAux;
+        threeInOne(array);
+        array.should.equal(arrayAux);
+
+    })
 });
