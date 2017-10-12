@@ -21,4 +21,9 @@ describe('Basic Test', () => {
         threeInOne(array);
         expect(array).to.have.members([1]);
     });
+    it("given 1,2,3,4,5,6 expected 6,15", () => {
+        let array = [1, 2, 3, 4, 5, 6];
+        let result = threeInOne(array);
+        expect(result).to.have.members([6,15]);
+    })
 });
