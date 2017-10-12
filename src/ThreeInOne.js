@@ -1,7 +1,10 @@
 "use strict";
 
-let threeInOne = function () {
-    return [6];
+let threeInOne = function (array) {
+    let aux = 0;
+    array.map((n) => aux = aux +n );
+
+    return [aux];
 };
 
 
