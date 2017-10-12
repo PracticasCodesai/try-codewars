@@ -17,10 +17,8 @@ describe('Basic Test', () => {
         expect(result).to.have.members([50]);
     });
     it("original array is not modified", () => {
-        let arrayAux = [];
-        let array = arrayAux;
+        let array = [1];
         threeInOne(array);
-        array.should.equal(arrayAux);
-
-    })
+        expect(array).to.have.members([1]);
+    });
 });
