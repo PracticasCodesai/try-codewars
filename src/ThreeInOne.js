@@ -2,7 +2,8 @@
 
 let threeInOne = function (array) {
     let cloneArray = Object.assign([],array);
-    return cloneArray.map((n, index) => sumThree(cloneArray.splice(0, index + 3)));
+    return cloneArray.map((n, index) => sumThree(cloneArray.splice(0, index + 3)))
+        .splice(0, array.length/3);
 };
 
 function sumThree(array) {

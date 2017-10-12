@@ -25,5 +25,10 @@ describe('Basic Test', () => {
         let array = [1, 2, 3, 4, 5, 6];
         let result = threeInOne(array);
         expect(result).to.have.members([6,15]);
-    })
+    });
+    it("given 1,2,3,4,5,6 expected length 2", () => {
+        let array = [1, 2, 3, 4, 5, 6];
+        let result = threeInOne(array);
+        result.length.should.equal(2);
+    });
 });
