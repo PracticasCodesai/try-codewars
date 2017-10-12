@@ -1,0 +1,14 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Codesai",
+  "scripts": {
+    "test": "mocha ./spec/**/*.spec.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
